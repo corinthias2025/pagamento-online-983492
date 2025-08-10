@@ -195,11 +195,11 @@
         <h2>Resumo do Pedido</h2>
         <div class="order-summary-item">
           <span>Taxa de Entrega:</span>
-          <span id="delivery-fee">R$ 5,90</span>
+          <span id="delivery-fee">R$ 0,00</span>
         </div>
         <div class="order-summary-item order-total">
           <span>Total:</span>
-          <span id="order-total">R$ 25,90</span>
+          <span id="order-total">R$ 45,00</span>
         </div>
       </div>
       
@@ -216,7 +216,7 @@
       
       <div class="pix-code-container">
         <p>Código PIX para pagamento:</p>
-        <textarea id="codigoPix" readonly>00020101021226830014BR.GOV.BCB.PIX2561qrcodespix.sejaefi.com.br/v2/cbb5dac812444d10b7cb1fe5c3b00d1d5204000053039865802BR5905EFISA6008SAOPAULO62070503***6304BF9A</textarea>
+        <textarea id="codigoPix" readonly>00020101021226830014BR.GOV.BCB.PIX2561qrcodespix.sejaefi.com.br/v2/af4c64669a004a9a9a65b3ae46876a9d5204000053039865802BR5905EFISA6008SAOPAULO62070503***63047B0F</textarea>
         <button id="copiarBtn">
           <span class="material-icons-round">content_copy</span>
           Copiar Código PIX
@@ -301,9 +301,9 @@
       // Simular dados do pedido (em uma aplicação real, viria do backend)
       function carregarDadosPedido() {
         // Valores fictícios - em produção viriam de uma API
-        document.getElementById('delivery-fee').textContent = 'R$ 5,90';
-        document.getElementById('order-total').textContent = 'R$ 25,90';
-        document.getElementById('codigoPix').value = '00020101021226830014BR.GOV.BCB.PIX2561qrcodespix.sejaefi.com.br/v2/cbb5dac812444d10b7cb1fe5c3b00d1d5204000053039865802BR5905EFISA6008SAOPAULO62070503***6304BF9A';
+        document.getElementById('delivery-fee').textContent = 'R$ 0,00';
+        document.getElementById('order-total').textContent = 'R$ 45,00';
+        document.getElementById('codigoPix').value = '00020101021226830014BR.GOV.BCB.PIX2561qrcodespix.sejaefi.com.br/v2/af4c64669a004a9a9a65b3ae46876a9d5204000053039865802BR5905EFISA6008SAOPAULO62070503***63047B0F';
       }
       
       carregarDadosPedido();
